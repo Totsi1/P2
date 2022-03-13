@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --blue: #0065FC
+    --lightblue: #0065FC
+    --gray: #F2F2F2
+    --darkgray: #d9d9d9
+
+
+}
+
+/* wilcard */
+*{
+    box-sizing: border-box;
+    font-family: "relaway", "sans-serif"
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+}
+/* navbar */
+
+header
+{
+    display: flex;
+}
+
+header nav 
+{
+    margin-left: auto;
+    padding-left: 40px;
+}
+
+header nav ul 
+{
+    display: flex;
+    list-style-type: none;
+    padding: 50px;
+    margin: 0;
+}
+
+header nav ul li
+{
+    margin-right: 20px;
+    
+}
+
+#heber { 
+
+    color: #0065FC;
+    
+    }
+
+/* BODY */
+
+.wrapper {
+   
+    z-index: 10px;
+    
+}
+
+/* search-form */
+.search-form{
+    display: flex;
+}
+
+.search-form i {
+    padding: 10px;
+    background-color: #F2F2F2;
+    border-radius: 5px; 
+}
+
+.search-form imput {
+
+    border: none;
+    padding-right: 10px;
+
+
+}
+
+.search-form button {
+    border-radius: 10px;
+
+    
+}
+
+.search-form ::placeholder {
+          
+    
+}
+
+/* Filters */
+
+.filters-list {
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+    gap: 20px;  
+    flex-wrap: wrap;    
+    
+}
+.filters .fas {  
+    color:#0065FC;
+    background-color: #DEEBFF;
+    padding: 10px;
+    border-radius: 50px;  
+}
+
+.filters {
+    
+    border: 2px solid grey;
+    border-radius: 50px;
+    padding-right: 10px;
+    
+   
+}
+
+.filters span {
+    font-weight: bold;
+    bo
+
+}
+
+/* Search info */
+.search-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-info .fas{
+
+    color:#0065FC; 
+    border: 2px solid lightblue;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 70px; 
+   
+
+}
+
+ /* Rooms list */ 
+ .rooms-list {
+     display: flex;
+     gap: 10px;
+
+ }   
+
+ .rooms-list div {
+    border: 1px solid red;
+    background-color: var(--lightgrey);
+    gap: 70px;
+
+ }
+
+ .rooms-list .town {
+     flex-basis: 66%;
+ }
+
+ .rooms-list .popular {
+     flex-basis: 33%;
+ }
+
+
+
+ @media (max-widht: 800px) {
+     .rooms-list
+     flex-direction: : colmn;
+}
+
+
+/* List Rooms Town */
+
+.town-rooms-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+.town-rooms-list div {
+   
+    border: 1px solid blue; 
+    flex-basis: 20%;
+    
+}
+
+/* Popular */
+.rooms-list .popular {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rooms-list .popular {
+    border: 5px solid green;
+}
+
+/* Rooms-card */
+.rooms-card {
+    background-color: white;
+    border-radius: 10px;
+
+}
+.rooms-card img{
+    
+    border-radius: 30px 30px 0 0;
+    padding: 5px; 
+    height: 150px;
+}
