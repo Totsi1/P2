@@ -24,6 +24,8 @@ a {
     text-decoration: none;
 
 }
+
+
 /* navbar */
 
 header
@@ -90,11 +92,8 @@ header nav ul li
     
 }
 
-.search-form ::placeholder {
-          
-    
-}
 
+          
 /* Filters */
 
 .filters-list {
@@ -123,7 +122,7 @@ header nav ul li
 
 .filters span {
     font-weight: bold;
-    bo
+    
 
 }
 
@@ -142,74 +141,233 @@ header nav ul li
     padding-left: 5px;
     border-radius: 70px; 
    
-
 }
 
  /* Rooms list */ 
  .rooms-list {
+
      display: flex;
+     border: 4px solid #0065FC;
      gap: 10px;
-
- }   
-
- .rooms-list div {
-    border: 1px solid red;
-    background-color: var(--lightgrey);
-    gap: 70px;
-
- }
+    
+    }   
 
  .rooms-list .town {
-     flex-basis: 66%;
- }
-
- .rooms-list .popular {
-     flex-basis: 33%;
- }
-
-
-
- @media (max-widht: 800px) {
-     .rooms-list
-     flex-direction: : colmn;
+     background-color: rgb(241, 241, 241);
+     border: 10px solid red;
+     gap: 70px;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     width: 66%;
 }
 
+ 
+    
+    .rooms-list .town .heber {
+        display: flex;
+        border: 2px solid yellowgreen; 
+        
+ }
 
-/* List Rooms Town */
+   
+@media (max-width: 800px) {
+     .rooms-list {
+         flex-direction: column;
+    }
+     
+}
 
-.town-rooms-list {
+/* Town */
+
+.rooms-list .town .rooms-card {
+    
     display: flex;
+    flex-direction: row; 
+    border: 5px solid green;
     flex-wrap: wrap;
     gap: 5px;
     margin-bottom: 30px;
-}
-.town-rooms-list div {
+  
    
-    border: 1px solid blue; 
+}
+.rooms-list .town .rooms-card div {
+    background-color: white;
+    border: 2px solid yellowgreen; 
     flex-basis: 20%;
     
 }
 
-/* Popular */
-.rooms-list .popular {
-    display: flex;
-    flex-direction: column;
+/* rooms-card */
 
-}
-
-.rooms-list .popular {
-    border: 5px solid green;
-}
-
-/* Rooms-card */
-.rooms-card {
+.card {
+  
     background-color: white;
-    border-radius: 10px;
-
+    border: 5px solid blue; 
 }
-.rooms-card img{
-    
+
+   
+
+.rooms-list .town .rooms-card img {
+    display: flex;
     border-radius: 30px 30px 0 0;
     padding: 5px; 
     height: 150px;
+    
+}
+
+.picture {
+    display: flex;
+    border-radius: 30px 30px 0 0;
+    padding: 5px; 
+    height: 150px;
+}
+ 
+.content {
+    border: 5px solid rosybrown;
+}
+
+
+/* popular */
+
+.rooms-list .popular {
+    
+    border: 10px solid #d600fc;
+    width: 34%;
+}
+
+.popular-article {
+    display: flex;
+    border:  5px solid rgb(72, 255, 0);
+}
+
+.popular-card {
+    border: 10px solid rgb(17, 0, 255);
+    
+}
+
+.popular-card div {
+
+
+}
+
+.popular-card img {
+    display: flex;
+    border-radius: 30px 30px 0 0;
+    padding: 5px; 
+    height: 150px;
+
+}
+
+/* popular-rooms */
+.rooms-list .popular .rooms {
+
+    display: flex;
+    justify-content: space-around ;
+    border: 10px solid rgb(15, 14, 14);
+   
+}
+
+.popular-content {
+
+    border: 10px solid rgb(255, 174, 0);
+}
+
+.stars {
+    color: #0065FC;
+    border: 5px solid rosybrown;
+}
+
+.icon {
+    
+    border: 5px solid rgb(225, 65, 65);
+}
+
+/* Activités */
+
+.act-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 10px solid rebeccapurple;
+}
+
+.container-activité {
+   
+    border: 10px solid yellow
+}
+
+.container-activité:nth-child(1) img {
+    width: 300px;
+    height: 400px;
+}
+
+.container-activité:nth-child(2) img {
+
+width: 200px;
+height: 80px;
+
+   }
+
+.container-activité:nth-child(3) img {
+    
+    width: 300px;
+    height: 300px;
+}
+
+
+.act {
+    border: 5px solid rgb(0, 255, 255);
+
+}
+
+.actmars {
+    border: 5px solid blue;
+}
+
+.card-activité {
+    border: 5px solid green;
+}
+
+.card-name {
+    border: 5px solid black;
+}
+
+.act-card img {
+    border-radius: 30px 30px 0 0;
+    padding: 5px; 
+    height: 150px;
+
+}
+
+/* footer */
+
+.footer-end {
+
+    border: 10px solid goldenrod;
+}
+
+.container-footer {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 300px;
+    border: 10px solid blue; 
+}
+
+
+
+.a-propos {
+   
+    border: 5px solid green
+    
+    
+}
+
+.nos-heber {
+    border: 5px solid rosybrown;
+}
+
+.assistance {
+
+    border: 5px solid black;
 }
